@@ -1,0 +1,228 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  text-align: center
+}
+
+#header-logo {
+  margin-top: 2%;
+  margin-right: 8%;
+}
+#about-logo {
+  margin-top: 2%;
+}
+#signup {
+  margin-top: 2%;
+  margin-bottom: 5%;
+  /*float: right;*/
+}
+.tabs:hover {
+  font-color: white;
+}
+
+/* top header */
+#main-header {
+  font-family: 'Slackey', cursive;
+  color: ghostwhite;
+  border-radius: 5px;
+  text-shadow: 1px 1px #5DAF76;
+}
+#main-header > div {
+  float: right;
+  /*padding: 10px;*/
+}
+
+/* NAVBAR */
+.nav-bar {
+  color: white;
+  text-decoration: none;
+  margin: 0px 5px;
+  font-size: 24px;
+  padding: 5px 15px;
+}
+.nav-bar:hover {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+
+/* background */
+.container-background {
+  height: 600px;
+}
+
+/* background: url('http://www.download-free-wallpaper.com/img17/mkmaytrrifoiatlknmcp.jpg'); */
+.background {
+  background: url('https://s-media-cache-ak0.pinimg.com/originals/44/bb/50/44bb50d043b19f701f3843d4c7906942.jpg');
+  background-size: cover;
+  height: 100%;
+}
+
+/* description */
+.desc {
+  /*Express | Rails | Nature Lover*/
+  text-align: center;
+  margin-top: -26%;
+  color: white;
+}
+#desc-title {
+  font-size: 2em;
+  font-family: cursive;
+}
+#desc-frame {
+  font-size: 3em;
+  margin-top: -1%;
+}
+#desc-index, #desc-resume {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  border: 2px solid white;
+  padding: 15px 30px 15px 30px;
+  margin: 0px 10px;
+}
+#desc-index:hover, #desc-resume:hover {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+#desc-main {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  border: 2px solid white;
+  padding: 15px 30px 15px 30px;
+  margin: 0px 10px;
+}
+#desc-main:hover {
+  background-color: white;
+  color: black;
+}
+#buttons {
+  margin-top: 5%;
+}
+
+/* content */
+.content {
+  margin-top: 13%;
+}
+.me-p, .about-p, .its-p {
+  line-height: 200%;
+}
+
+/* ABOUT PAGE */
+.about-container-background {
+  height: 45em;
+}
+.about-background {
+  background: url('https://cdn.tutsplus.com/photo/uploads/legacy/278_blackandwhite/techo.jpg');
+  background-size: cover;
+  height: 100%;
+}
+  /*background: url('http://2.bp.blogspot.com/-V7PL55tDbeg/VAPwqSvJjhI/AAAAAAAAGCg/598u_urQpd4/s1600/Tennessee%2BVol%2Bfor%2BLife.jpg');*/
+
+/* ABOUT description */
+.about-desc {
+  text-align: center;
+  margin-top: -40%;
+  color: white;
+}
+.about-box {
+  margin-top: 14%;
+  margin-left: 35%;
+  /*background-color: black;*/
+  /*opacity: .8;*/
+  color: white;
+  border: 4px solid white;
+  border-radius: 10%;
+  width: 30%;
+}
+#about-title {
+  font-size: 2em;
+  font-family: cursive;
+}
+#about-info {
+  font-size: 4em;
+  margin-top: -1%;
+}
+
+.about-me h1 {
+  margin-top: 65%;
+}
+#desc-about {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  border: 2px solid white;
+  padding: 15px 30px 15px 30px;
+  margin: 0px 10px;
+}
+#desc-about:hover {
+  background-color: white;
+  color: black;
+}
+
+/* CONTACT PAGE */
+.contact-container-background {
+  height: 45em;
+}
+.contact-background {
+  background: url('http://www.download-free-wallpaper.com/img50/bsacftryjmvphpkabprk.jpg');
+  background-cover: cover;
+  height: 100%;
+}
+
+/* CONTACT description */
+.contact-desc {
+  text-align: center;
+  margin-top: -28%;
+  color: greenyellow;
+  /*border: 5px solid white;*/
+  /*width: 75%;*/
+}
+.contact-box {
+
+}
+
+#whole-contact {
+  /*margin-left: 30%;*/
+}
+
+#desc-contact {
+  /*margin-top: 5%;*/
+  /*margin-left: 72%;*/
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  border: 2px solid white;
+  padding: 15px 30px 15px 30px;
+  margin: 0px 10px;
+}
+#desc-contact:hover {
+  background-color: white;
+  color: black;
+}
+
+/*messing stuff up(responsive)*/
+#port {
+  /*margin-left: 40%;*/
+}
+
+#contact-title {
+  font-size: 5em;
+  font-family: cursive;
+}
+#contact-info {
+  font-size: 2.5em;
+  margin-top: 10%;
+}
+.contact h1 {
+  margin-top: 10%;
+}
