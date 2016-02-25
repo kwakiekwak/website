@@ -1,50 +1,251 @@
 <!-- navbar -->
-<div id="main-header">
-  <div id="signup">
-    <a href="/" class="nav-bar">Home</a>
-    <a href="/users/signup" class="nav-bar">Portfolio</a>
-    <a href="/#/about" class="nav-bar">About</a>
-    <a href="/users/signup" class="nav-bar">Resume</a>
-    <a href="/#/contact" id="desc-index">Contact</a>
-  </div>
+<header>
+   <nav class="fixed-nav-bar">
+     <input type="checkbox" id="css-toggle-menu" name="css-toggle-menu">
+     <ul class="main">
+           <li><a href="/" class="nav-bar">Home</a></li>
+           <li><a href="/#/portfolio" class="nav-bar">Portfolio</a></li>
+           <li><a href="/#/about" class="nav-bar">About</a></li>
+           <li><a href="https://drive.google.com/file/d/0B189AB6x5MrHOUNtcHA0Rl9RMmc/view?usp=sharing" class="nav-bar">Resume</a></li>
+           <li><a href="/#/contact" class="nav-bar">Contact</a></li>
+     </ul>
+     <label for="css-toggle-menu" id="css-toggle-menu"></label>
+   </nav>
+</header>
+<br>
+<br>
+<br>
+<div class="container">
+  <h1 class="quote">Quote of the day!</h1>
+  {{main.name}}
 </div>
+
 <!--  -->
 <div class="container-background">
   <div class="background">
+    <div class="main-row">
+      <div class="col-xs-3 col-md-3"></div>
+      <div class="col-xs-6 col-md-6">
+        <p id="desc-title">Full Stack Web Developer</p>
+        <p id="desc-frame"><strong>Shoot for the Stars | Never look back</strong></p>
+        <div id="buttons">
+          <a href="/#/contact" id="desc-main">Contact</a>
+          <a href="https://drive.google.com/file/d/0B189AB6x5MrHOUNtcHA0Rl9RMmc/view?usp=sharing" id="desc-resume">Resume</a>
+        </div>
+      </div>
+      <div class="col-xs-3 col-md-3"></div>
+    </div>
   </div>
 </div>
-<div class="desc">
+
+<br>
+<br>
+<br>
+
+<div class="about-container">
   <div class="row">
-    <div class="col-xs-3 col-md-3"></div>
-    <div class="col-xs-6 col-md-6">
-      <p id="desc-title">Full Stack Web Developer</p>
-      <p id="desc-frame"><strong>Aim for the Stars | Never look back</strong></p>
+    <div class="col-xs-4 col-md-4">
+      <img class="img-responsive img-circle" src="image/headshot.jpg" style="margin-left: 25%">
+      <h1> A Little About Me </h1>
     </div>
-    <div class="col-xs-3 col-md-3"></div>
+
+    <div class="col-xs-8 col-md-8">
+      <div style="float: left">
+        <h1> Background Info </h1>
+      </div>
+      <div style="float: left">
+        <h5> My name is John B. Kwak. Aspiring Web Developer. Nature Lover. Sports Enthusiast. </h5>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="port-container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1 style="color:white"> Your Wish Is My Command </h1>
+      <br>
+      <br>
+    </div>
   </div>
 
-  <!-- changed the id/wokr on it -->
+
   <div class="row">
-  <div class="col-xs-3 col-md-3"></div>
-  <div id="buttons" class="col-xs-6 col-md-6">
-    <a href="/#/contact" id="desc-main">Contact</a>
-    <a href="/#/resume" id="desc-resume">Resume</a>
-  </div>
-  <div class="col-xs-3 col-md-3"></div>
-</div>
-<div class="content">
-  <div class="me">
-    <div class="row">
-      <div class="col-md-4"></div>
-      <div class="col-md-4">
-      <h1 style="text-align:center">Brief Background</h1>
-      <p class="me-p">My interest in web development stemmed from my passion for gaming. Between developing websites and playing video games, I admittedly spend most of my time in front of a screen. Some of my passions are writing clean code, creating sexy user experiences and filling up a fresh cup of coffee.</p>
+    <div class="col-lg-4 col-md-6 text-center">
+      <div class="main-box">
+        <i class="fa fa-4x fa-code wow bounceIn text-muted" style="visibility: visible; animation-name: bounceIn;"></i>
+        <h3>Web Development</h3>
+        <p>blah blah
+        blah blah
+        blah blah
+        blah blah
+        blah blah
+        blah blah</p>
+        <br>
+        <br>
       </div>
-      <div class="col-md-4"></div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 text-center">
+      <div class="main-box">
+        <i class="fa fa-4x fa-laptop wow bounceIn text-muted" style="visibility: visible; animation-name: bounceIn;"></i>
+        <h3>Something Computers</h3>
+        <p>blah blah
+        blah blah
+        blah blah
+        blah blah
+        blah blah
+        blah blah</p>
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 text-center">
+      <div class="main-box">
+        <i class="fa fa-4x fa-folder-open wow bounceIn text-muted" style="visibility: visible; animation-name: bounceIn;"></i>
+        <h3>Something Mkdir</h3>
+        <p>blah blah
+        blah blah
+        blah blah
+        blah blah
+        blah blah
+        blah blah</p>
+        <br>
+        <br>
+      </div>
+    </div>
+
+  </div>
+</div>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-sm-6 portfolio-box">
+
+      <img src="image/project1.jpg" class="img-responsive" id="projects">
+        <h3>Phrase-Me!</h3>
+        <h5>A game created based on a combination of Wheel Of Fortune and Hang Man.</h5>
+      <div class="portfolio-box-caption">
+          <div class="portfolio-box-caption-content">
+
+              <div class="project-name">
+                  <a href="https://github.com/kwakiekwak/Phrase-Me-" class="btn btn-default btn wow tada" style="margin: 30px">
+                  <i class="fa fa-github"> Github</i></a>
+                  <a href="http://kwakiekwak.github.io/Phrase-Me-/index1.html" class="btn btn-default btn wow tada" style="margin: 30px;">
+                  <i class="fa fa-external-link"> Launch</i></a>
+              </div>
+
+          </div>
+      </div>
+
+    </div>
+
+    <div class="col-lg-4 col-sm-6 portfolio-box">
+      <img src="image/project3.jpg" class="img-responsive" id="projects">
+        <h3>Venture Us</h3>
+        <h5>A MEN stack website developed in order for people to use to get rid of indecisiveness.</h5>
+      <div class="portfolio-box-caption">
+          <div class="portfolio-box-caption-content">
+
+              <div class="project-name">
+                  <a href="https://github.com/kwakiekwak/venture_us" class="btn btn-default btn wow tada" style="margin: 30px">
+                  <i class="fa fa-github"> Github</i></a>
+                  <a href="http://project-venture-us.herokuapp.com/" class="btn btn-default btn wow tada" style="margin: 30px;">
+                  <i class="fa fa-external-link"> Launch</i></a>
+              </div>
+
+          </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-sm-6 portfolio-box">
+      <img src="image/project4.jpg" class="img-responsive" id="projects">
+        <h3>Tag Along</h3>
+        <h5>A MEAN stack website originated in order for people to carpool in a safe and easy way.</h5>
+      <div class="portfolio-box-caption">
+          <div class="portfolio-box-caption-content">
+
+              <div class="project-name">
+                  <a href="https://github.com/kwakiekwak/Tag_Along" class="btn btn-default btn wow tada" style="margin: 30px">
+                  <i class="fa fa-github"> Github</i></a>
+                  <a href="#" class="btn btn-default btn wow tada" style="margin: 30px;">
+                  <i class="fa fa-external-link"> Launch</i></a>
+              </div>
+
+          </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 portfolio-box">
+      <img src="image/project2.jpg" class="img-responsive" id="projects">
+        <h3>Peekatchu-R-Challenge</h3>
+        <h5>A website built on Rails. The idea stemmed from Youtube stars trying out different challenges.</h5>
+      <div class="portfolio-box-caption">
+          <div class="portfolio-box-caption-content">
+
+              <div class="project-name">
+                  <a href="https://github.com/kwakiekwak/peekatchu-r" class="btn btn-default btn wow tada" style="margin: 30px">
+                  <i class="fa fa-github"> Github</i></a>
+                  <a href="https://peekatchu-challenge.herokuapp.com/" class="btn btn-default btn wow tada" style="margin: 30px;">
+                  <i class="fa fa-external-link"> Launch</i></a>
+              </div>
+
+          </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 portfolio-box">HI</div>
+
+  </div>
+</div>
+
+<div class="port-me">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1 style="color:white"> Contact Me </h1>
+      <br>
+      <br>
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <h2 class="section-heading" style="font-size: 4em; color: aquamarine">Hello, My Name is John B. Kwak</h2>
+        <hr class="primary">
+        <h3 style="color:white">Ready to start your next project?</h3>
+      </div>
+
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <i href="tel:+18183702601" class="fa fa-phone fa-3x wow bounceIn" style="font-size: 2em; margin-top: 2%; color: #0a6ebd" > Call Me</i>
+<br>
+      </div>
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <i href="mailto:john.bh.kwak@gmail.com" class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: bounceIn; font-size: 2em; margin-top: 2%; color: #0a6ebd">Email Me</i>
+<br>
+      </div>
+
+
+      <div class="col-lg-8 col-lg-offset-2 text-center" style="margin-top: 3%">
+        <ul class="list-inline">
+            <li>
+                <a href="https://angel.co/rick-gibson-1" class="btn-social btn-outline"><i class="fa fa-fw fa-angellist"></i></a>
+            </li>
+            <li>
+                <a href="http://www.linkedin.com/in/arichardgibson" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+            </li>
+            <li>
+                <a href="https://profiles.generalassemb.ly/profiles/rickgibson" class="btn-social btn-outline"><i class="fa fa-fw fa-users"></i></a>
+            </li>
+             <li>
+                <a href="https://github.com/ricklesgibson" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+            </li>
+             <li>
+                <a href="http://www.builtinla.com/member/rick-gibson" class="btn-social btn-outline"><i class="fa fa-fw fa-cogs"></i></a>
+            </li>
+        </ul>
+      </div>
+      <br>
+
     </div>
   </div>
-    <br>
-    <br>
-    <hr>
 </div>
+
+
+
+
 

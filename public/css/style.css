@@ -1,3 +1,88 @@
+/***************** FONTS ********************/
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300");
+html{font-size: 62.5%; font-family: 'Open Sans', sans-serif;}
+body{min-height: 100vh;}
+h1{font-size: 3rem; margin-bottom: 1rem;}
+h2{font-size: 1.6rem;}
+header{position: relative; background: #999;}
+main{padding: 2rem;}
+
+/***************** NAVIGATION ********************/
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1080px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+nav ul,
+nav li{
+  flex: 1;
+}
+nav li:last-child{border-bottom: none;}
+nav a{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  font-size: 1.8rem;
+}
+nav a:hover{
+  background: #adacac;
+  color: #fff;
+}
+nav li{
+  position: relative;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+}
+nav input,
+nav label{
+  display: none;
+  width: 36px;
+  height: 36px;
+  background: #555;
+  color: #fff;
+  text-align: center;
+  line-height: 36px;
+  font-size: 1.6rem;
+  border-radius: 4px;
+}
+nav label{position: absolute; top: 8px; right: 8px; transition: .4s;}
+nav label:hover{cursor:pointer;}
+nav label:before{
+  font-family: FontAwesome;
+  font-size: 24px;
+  content: "\f0c9";
+  text-align: center;
+}
+
+/*************** MEDIA QUERIES *******************/
+@media only screen and (max-width: 1080px){
+  nav ul{
+    display: none;
+    box-shadow: 0 0 5px rgba(0,0,0, .7);
+  }
+  nav li{
+    flex: none;
+    width: 100%;
+    border-bottom: solid 1px #777;
+  }
+  nav input[type="checkbox"]:checked + ul{
+    display: block;
+    width: 100%;
+    background: #999;
+  }
+  nav label{display: block;}
+  nav input[type="checkbox"]:checked + ul li:nth-child(1){
+    background: #777;
+    color: #fff;
+  }
+}
+/*        */
+
 body {
   margin: 0px;
   padding: 0px;
@@ -15,8 +100,7 @@ h1 {
   margin-top: 2%;
 }
 #signup {
-  margin-top: 2%;
-  margin-bottom: 5%;
+margin: 0%;
   /*float: right;*/
 }
 .tabs:hover {
@@ -29,13 +113,26 @@ h1 {
   color: ghostwhite;
   border-radius: 5px;
   text-shadow: 1px 1px #5DAF76;
-}
-#main-header > div {
-  float: right;
-  /*padding: 10px;*/
+  margin: 5% 28%;
 }
 
+.main-row {
+  text-align: center;
+}
+
+
 /* NAVBAR */
+/* sets the NAVBAR to fixed */
+.fixed-nav-bar {
+  background-color: rgb(40, 0, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 4.7em;
+  /*background-color: #00a087;*/
+}
 .nav-bar {
   color: white;
   text-decoration: none;
@@ -52,14 +149,108 @@ h1 {
 /* background */
 .container-background {
   height: 600px;
+  margin: -4% 8%;
 }
 
 /* background: url('http://www.download-free-wallpaper.com/img17/mkmaytrrifoiatlknmcp.jpg'); */
 .background {
-  background: url('https://s-media-cache-ak0.pinimg.com/originals/44/bb/50/44bb50d043b19f701f3843d4c7906942.jpg');
+  background: url('http://www.summersmagic.com/wp-content/uploads/2013/03/Geminid_1.jpg');
   background-size: cover;
   height: 100%;
+  z-index: -1;
+  margin-top: 10%;
+  /*border-radius: 50%;*/
 }
+
+
+/* about pages */
+hr {
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: black; /* old IE */
+  background-color: #333; /* Modern Browsers */
+  height: 1px;
+}
+.about-container .img-circle {
+  border: 10px solid transparent;
+  box-shadow: 0px 0px 0px 10px black;
+  max-width: 40%;
+}
+.about-container {
+  margin-top: 4%;
+  height: 25em;
+  border-radius: 50%;
+}
+
+/* Portfolio */
+.port-container {
+  background-color: rgb(40, 0, 0);
+  /*height: 25em;*/
+  /*opacity: ;*/
+}
+
+.port-me {
+  background-color: rgb(40, 0, 0);
+  margin: 0% 0%;
+}
+
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+
+/*.portfolio-box figure img {
+  -webkit-filter: grayscale(0) blur(0);
+  filter: grayscale(0) blur(0);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.hover10 figure:hover img {
+  -webkit-filter: grayscale(100%) blur(3px);
+  filter: grayscale(100%) blur(3px);
+}*/
+#projects {
+  -webkit-transition:all 0.5s ease-out;
+  -moz-transition:all 0.5s ease-out;
+  -ms-transition:all 0.5s ease-out;
+  -o-transition:all 0.5s ease-out;
+  transition:all 0.5s ease-out;
+  border: 1px solid rgb(40, 0, 0);
+}
+
+#projects:hover {
+  -webkit-transform:scale(1.16);
+  -moz-transform:scale(1.16);
+  -ms-transform:scale(1.16);
+  -o-transform:scale(1.16);
+  transform:scale(1.16);
+  /*opacity: .8;*/
+  /*z-index: -1;*/
+}
+.portfolio-box {
+  height: 35em;
+}
+
+/* Social Networks */
+.btn-social {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #0a6ebd;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 45px;
+}
+
+.btn-outline:hover {
+  border: solid 2px #f05f40;
+  color: #fff;
+  background: #ee4b28;
+}
+
 
 /* description */
 .desc {
@@ -69,12 +260,16 @@ h1 {
   color: white;
 }
 #desc-title {
-  font-size: 2em;
+  font-size: 3em;
   font-family: cursive;
+  margin-top: 18%;
+  color: white;
+  font-weight: bold;
 }
 #desc-frame {
   font-size: 3em;
-  margin-top: -1%;
+  /*margin-top: -1%;*/
+  color: white;
 }
 #desc-index, #desc-resume {
   text-decoration: none;
