@@ -1,24 +1,59 @@
 <!-- navbar -->
-<div id="main-header">
-  <div id="signup">
-    <a href="/" class="nav-bar">Home</a>
-    <a href="/users/signup" class="nav-bar">Portfolio</a>
-    <a href="/#/about" class="nav-bar">About</a>
-    <a href="/users/signup" class="nav-bar">Resume</a>
-    <a href="/#/contact" id="desc-index">Contact</a>
-  </div>
-</div>
+<header>
+   <nav class="fixed-nav-bar">
+     <input type="checkbox" id="css-toggle-menu" name="css-toggle-menu">
+     <ul class="main">
+           <li><a href="/" class="nav-bar">Home</a></li>
+           <li><a href="/#/portfolio" class="nav-bar">Portfolio</a></li>
+           <li><a href="/#/about" class="nav-bar">About</a></li>
+           <li><a href="/#/contact" class="nav-bar">Contact</a></li>
+           <li><a href="https://drive.google.com/file/d/0B189AB6x5MrHOUNtcHA0Rl9RMmc/view?usp=sharing" class="nav-bar">Resume</a></li>
+     </ul>
+     <label for="css-toggle-menu" id="css-toggle-menu"></label>
+   </nav>
+</header>
 <!--  -->
-
-<div class="about-container-background">
-  <div class="about-background">
+<div class="container-background">
+  <div class="background">
+    <div class="main-row">
+      <div class="col-xs-3 col-md-3"></div>
+      <div class="col-xs-6 col-md-6">
+        <p id="desc-title">Full Stack Web Developer</p>
+        <p id="desc-frame"><strong>Aim for the Stars | Never look back</strong></p>
+        <div id="buttons">
+          <a href="/#/contact" id="desc-main">Contact</a>
+          <a href="https://drive.google.com/file/d/0B189AB6x5MrHOUNtcHA0Rl9RMmc/view?usp=sharing" id="desc-resume">Resume</a>
+        </div>
+      </div>
+      <div class="col-xs-3 col-md-3"></div>
+    </div>
   </div>
 </div>
 
-<div class="about-desc">
-  <div class="about-box">
-    <p id="about-title">A little about me</p>
-    <p id="about-info"><strong>Who I Am</strong></p>
+<br>
+<br>
+<br>
+<div class="about-container">
+  <div class="row">
+    <div class="col-xs-4 col-md-4">
+      <img class="img-responsive img-circle" src="image/headshot.jpg" style="margin-left: 25%">
+      <br>
+      <h1> A Little About Me </h1>
+    </div>
+
+    <div class="col-xs-6 col-md-6" style="margin-top: -2%">
+      <div style="float: left">
+        <h1> Background Info </h1>
+      </div>
+      <div style="float: left">
+        <h5> Hello, my name is John Byonghun Kwak, and I am an aspiring Web Developer whose passion to create elegant code is driven by the joy of puzzle-solving, the thirst to be part of a rapidly growing industry, and the desire to keep on learning.</h5>
+        <div id="fun">
+          <a href="/#/about">Fun Facts Below</a>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-xs-2 col-md-2"></div>
   </div>
 </div>
 

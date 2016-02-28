@@ -2,6 +2,8 @@ var app = angular.module('Website', ['ui.router'])
   .config(MainRouter)
 
 function MainRouter($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.otherwise('/')
+
   $stateProvider
     .state("homePage", {
       url: "/",
@@ -22,7 +24,6 @@ function MainRouter($stateProvider, $urlRouterProvider) {
       templateUrl: "views/pages/port.html"
     })
 
-    $urlRouterProvider.otherwise('/')
 
 }
 
