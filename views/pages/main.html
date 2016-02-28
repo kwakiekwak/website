@@ -12,12 +12,27 @@
      <label for="css-toggle-menu" id="css-toggle-menu"></label>
    </nav>
 </header>
-<br>
-<br>
+
 <div class="container">
-  <h1 class="quote">Quote of the day!</h1>
-  {{main.name}}
+  <div class="background">
+    <div class="main-row">
+      <div class="col-xs-2 col-md-3"></div>
+      <div class="col-xs-4 col-md-4">
+        <div class="quote-container">
+          <i class="pin"></i>
+            <blockquote class="note yellow">
+              {{main.quote}}
+            <cite class="author">{{main.author}}</cite>
+            </blockquote>
+        </div>
+      </div>
+      <div class="col-xs-6 col-md-5"></div>
+    </div>
+  </div>
 </div>
+
+
+
 
 <!--  -->
 <div class="container-background">
@@ -70,7 +85,7 @@
 <div class="port-container">
   <div class="row">
     <div class="col-lg-12 text-center">
-      <h1 style="color:white"> Your Wish Is My Command </h1>
+      <h1 style="color:aquamarine; font-size: 3em"> Your Wish Is My Command </h1>
       <br>
       <br>
     </div>
@@ -81,13 +96,18 @@
     <div class="col-lg-4 col-md-6 text-center">
       <div class="main-box">
         <i class="fa fa-4x fa-code wow bounceIn text-muted" style="visibility: visible; animation-name: bounceIn;"></i>
-        <h3>Web Development</h3>
-        <p>blah blah
-        blah blah
-        blah blah
-        blah blah
-        blah blah
-        blah blah</p>
+        <h3 style="color:floralwhite">Web Development</h3>
+        <h5 style="color:aquamarine"> < Front-End >  < /Back-End ></h5>
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 text-center">
+      <div class="main-box">
+        <i class="fa fa-4x fa-users" style="visibility: visible; animation-name: bounceIn;"></i>
+        <h3 style="color:floralwhite">Building A Community</h3>
+        <h5 style="color:aquamarine">Mentors, Coworkers, Classmates, Friends</h5>
         <br>
         <br>
       </div>
@@ -96,28 +116,8 @@
     <div class="col-lg-4 col-md-6 text-center">
       <div class="main-box">
         <i class="fa fa-4x fa-laptop wow bounceIn text-muted" style="visibility: visible; animation-name: bounceIn;"></i>
-        <h3>Something Computers</h3>
-        <p>blah blah
-        blah blah
-        blah blah
-        blah blah
-        blah blah
-        blah blah</p>
-        <br>
-        <br>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 text-center">
-      <div class="main-box">
-        <i class="fa fa-4x fa-folder-open wow bounceIn text-muted" style="visibility: visible; animation-name: bounceIn;"></i>
-        <h3>Something Mkdir</h3>
-        <p>blah blah
-        blah blah
-        blah blah
-        blah blah
-        blah blah
-        blah blah</p>
+        <h3 style="color:floralwhite">Where Magic Happens</h3>
+        <h5 style="color:aquamarine">Idea + Hardwork = Awesome Applications</h5>
         <br>
         <br>
       </div>
@@ -203,21 +203,21 @@
     </div>
 
     <!-- placeholder for hackathon project -->
-    <div class="col-lg-4 col-sm-6 portfolio-box">
-      <img src="image/pikachu.jpg" class="img-responsive" id="projects">
-        <h3>Solving-Homelessness</h3>
-        <h5>A website built on Rails. The idea stemmed from Youtube stars trying out different challenges.</h5>
-      <div class="portfolio-box-caption">
-          <div class="portfolio-box-caption-content">
+  <div class="col-lg-4 col-sm-6 portfolio-box">
+    <img src="image/hackathon.jpg" class="img-responsive" id="projects">
+      <h3>Solving-Homelessness</h3>
+      <h5>A website that serves as a portal for charity donations and placed 1st in the General Assembly's Hackathon</h5>
+    <div class="portfolio-box-caption">
+        <div class="portfolio-box-caption-content">
 
-              <div class="project-name">
-                  <a href="https://github.com/kwakiekwak/peekatchu-r" class="btn btn-default btn wow tada" style="margin: 30px">
-                  <i class="fa fa-github"> Github</i></a>
-                  <a href="https://peekatchu-challenge.herokuapp.com/" class="btn btn-default btn wow tada" style="margin: 30px;">
-                  <i class="fa fa-external-link"> Launch</i></a>
-              </div>
+            <div class="project-name">
+                <a href="https://github.com/nick-castaneda/solving-homelessness" class="btn btn-default btn wow tada" style="margin: 30px">
+                <i class="fa fa-github"> Github</i></a>
+                <a href="https://shrouded-escarpment-47705.herokuapp.com/" class="btn btn-default btn wow tada" style="margin: 30px;">
+                <i class="fa fa-external-link"> Launch</i></a>
+            </div>
 
-          </div>
+        </div>
       </div>
     </div>
 
@@ -232,17 +232,17 @@
       <br>
       <br>
       <div class="col-lg-8 col-lg-offset-2 text-center">
-        <h2 class="section-heading" style="font-size: 4em; color: aquamarine">My Name is John B. Kwak</h2>
+        <h2 class="section-heading" style="font-size: 4em; color: aquamarine">My Name is John Byonghun Kwak</h2>
         <hr class="primary">
         <h3 style="color:white">Ready to start your next project?</h3>
       </div>
 
       <div class="col-lg-8 col-lg-offset-2 text-center">
-        <i href="tel:+18183702601" class="fa fa-phone fa-3x wow bounceIn" style="font-size: 2em; margin-top: 2%; color: #0a6ebd" > Call Me</i>
+        <i href="tel:+18183702601" class="fa fa-phone fa-3x" style="font-size: 2em; margin-top: 2%; color: #0a6ebd" > &nbsp Phone: <span class="info">(818) 370 - 2601</span> </i>
 <br>
       </div>
       <div class="col-lg-8 col-lg-offset-2 text-center">
-        <i href="mailto:john.bh.kwak@gmail.com" class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: bounceIn; font-size: 2em; margin-top: 2%; color: #0a6ebd">Email Me</i>
+        <i href="mailto:john.bh.kwak@gmail.com" class="fa fa-envelope-o fa-3x" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: bounceIn; font-size: 2em; margin-top: 2%; color: #0a6ebd">&nbsp Email: <span class="info">john.bh.kwak@gmail.com</span></i>
 <br>
       </div>
 
@@ -250,19 +250,16 @@
       <div class="col-lg-8 col-lg-offset-2 text-center" style="margin-top: 3%">
         <ul class="list-inline">
             <li>
-                <a href="https://angel.co/rick-gibson-1" class="btn-social btn-outline"><i class="fa fa-fw fa-angellist"></i></a>
+                <a href="https://angel.co/john-bh-kwak" class="btn-social btn-outline"><i class="fa fa-fw fa-angellist"></i></a>
             </li>
             <li>
-                <a href="http://www.linkedin.com/in/arichardgibson" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/kwakiekwak" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
             </li>
             <li>
-                <a href="https://profiles.generalassemb.ly/profiles/rickgibson" class="btn-social btn-outline"><i class="fa fa-fw fa-users"></i></a>
+                <a href="https://profiles.generalassemb.ly/profiles/john-bh-kwak" class="btn-social btn-outline"><i class="fa fa-fw fa-users"></i></a>
             </li>
              <li>
-                <a href="https://github.com/ricklesgibson" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
-            </li>
-             <li>
-                <a href="http://www.builtinla.com/member/rick-gibson" class="btn-social btn-outline"><i class="fa fa-fw fa-cogs"></i></a>
+                <a href="https://github.com/kwakiekwak" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
             </li>
         </ul>
       </div>
