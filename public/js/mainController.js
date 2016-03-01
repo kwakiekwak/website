@@ -12,7 +12,8 @@ app.controller('MainController', function() {
   {'quote': "Get your facts first, then you can distort them as you please.", 'author': "Mark Twain"},
   {'quote': "Be yourself; everyone else is already taken.", 'author': "Oscar Wilde"},
   {'quote': "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.", 'author': "Albert Einstein"},
-  {'quote': "You know you're in love when you can't fall asleep because reality is finally better than your dreams.", 'author': "Dr. Seuss"}
+  {'quote': "You know you're in love when you can't fall asleep because reality is finally better than your dreams.", 'author': "Dr. Seuss"},
+  {'quote': "If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.", 'author': "J.K. Rowling"}
   ];
 
   vm.quote;
